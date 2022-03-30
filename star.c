@@ -1,0 +1,71 @@
+/** 
+ * Copyright (c) 2022 by Hosung.Kim <hyongak516@mail.hongik.ac.kr>
+ * ==============
+ * Hosung.Kim
+ * 2022.03.30
+ * --------------
+ * 한태윤 for문 예제
+ * ==============
+ */
+
+#include <stdio.h>
+
+void createStar1(int height);
+void createStar2(int height);
+void createStar3(int height);
+
+int main()
+{
+    int height = 5;
+    
+    
+    return 0;
+}
+
+void createStar1(int height) {
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+
+    for (int i=0; i<height; i++) {
+        for (int j=0; j<=i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+void createStar2(int height) {
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+
+    for (int i=0; i<height; i++) {
+        for (int j=height-i; j>0; j--) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+void createStar3(int height) {
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+
+    for (int i=0; i<height; i++) {
+        for (int j=height-1-i; j>0; j--) {
+            printf(" ");
+        }
+        for (int j=0; j<1+2*i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
