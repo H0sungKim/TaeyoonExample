@@ -10,19 +10,19 @@
 
 #include <stdio.h>
 
-void createStar1(int height);
-void createStar2(int height);
-void createStar3(int height);
+void printStar1(int height);
+void printStar2(int height);
+void printStar3(int height);
 
 int main()
 {
     int height = 5;
     
-    
+    printStar1(height);
     return 0;
 }
 
-void createStar1(int height) {
+void printStar1(int height) {
     // *
     // **
     // ***
@@ -37,7 +37,7 @@ void createStar1(int height) {
     }
 }
 
-void createStar2(int height) {
+void printStar2(int height) {
     // *****
     // ****
     // ***
@@ -52,7 +52,7 @@ void createStar2(int height) {
     }
 }
 
-void createStar3(int height) {
+void printStar3(int height) {
     //     *
     //    ***
     //   *****
