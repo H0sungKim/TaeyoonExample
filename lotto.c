@@ -25,7 +25,7 @@ int main()
 
     scanf("%d", &count);
     srand(time(NULL));
-    for (int i=0; i<count; i++) {
+    for (int _=0; _<count; _++) {
         // 중복되는 수 없이 6개 랜덤 로또 숫자 뽑기
         for (int j=0; j<LOTTO_LEN; j++) {
             int temp;
